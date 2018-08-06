@@ -1,0 +1,10 @@
+<div class="ledDiv">
+  <button (click)="update(led.id, !led.buttonState)"
+          [className]="led.buttonState ? 'led backgroundOn' : 'led backgroundOff'">
+    {{led.label}}
+  </button>
+
+  <div *ngIf="led.ledList.length">
+    <app-led-list [actualTree]="led.ledList"></app-led-list>
+  </div>
+</div>
