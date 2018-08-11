@@ -4,7 +4,7 @@
   </div>
   <div class="treeContainer" >
     <div *ngIf="showTree">
-      <app-led-list [actualTree]="actualTree"></app-led-list>
+      <app-led-list [ledList]="actualTree"></app-led-list>
     </div>
     <div *ngIf="!showTree">
       <div class="hint">Please click on the "Create Tree" button</div>

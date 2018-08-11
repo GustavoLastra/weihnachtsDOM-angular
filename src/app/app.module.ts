@@ -2,10 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { TreeComponent } from './component/tree/tree.component';
-import { LedListComponent } from './component/led-list/led-list.component';
-import { LedComponent } from './component/led/led.component';
-import { ToolsComponent } from './component/tools/tools.component';
+import { TreeComponent } from './components/tree/tree.component';
+import { LedListComponent } from './components/led-list/led-list.component';
+import { LedComponent } from './components/led/led.component';
+import { ToolsComponent } from './components/tools/tools.component';
 
 @NgModule({
   declarations: [

@@ -7,18 +7,11 @@ import {TreeService} from "../../shared/service/tree.service";
   templateUrl: './led.component.html',
   styleUrls: ['./led.component.css']
 })
-export class LedComponent implements OnInit, OnChanges {
+export class LedComponent {
 
   @Input() led: Led;
 
   constructor(private treeService:TreeService) { }
-
-  ngOnInit() {
-  }
-
-  ngOnChanges() {
-    console.log("LED: " + this.led.id);
-  }
 
   update(id:string, turn: boolean) {
     this.treeService.turn(id, turn);
