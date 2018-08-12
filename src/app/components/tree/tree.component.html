@@ -2,12 +2,15 @@
   <div class="toolsContainer">
     <app-tools (onCreate)="onCreate()"></app-tools>
   </div>
-  <div class="treeContainer" >
+
     <div *ngIf="showTree">
-      <app-led-list [ledList]="actualTree"></app-led-list>
+      <div class="treeContainer" >
+        <app-led-list [ledList]="actualTree"></app-led-list>
+      </div>
     </div>
     <div *ngIf="!showTree">
-      <div class="hint">Please click on the "Create Tree" button</div>
+      <div class="hintContainer">
+        <div class="hint">Please click on the "Create Tree" button</div>
+      </div>
     </div>
-  </div>
 </div>

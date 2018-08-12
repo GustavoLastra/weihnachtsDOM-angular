@@ -10,17 +10,11 @@
   width: 100%;
   margin: auto;
   background-color: #00796B;
-  /*
-  background: -webkit-linear-gradient(-45deg, #f1e767 0%,#feb645 100%); !* Chrome10-25,Safari5.1-6 *!;
-  */
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .treeContainer {
   background-color:#009688;
-  /*
-  background: -webkit-linear-gradient(-45deg, #c9de96 0%,#8ab66b 44%,#398235 100%); !* Chrome10-25,Safari5.1-6 *!
-  */
   padding-top: 2%;
   padding-bottom: 5%;
   width: 95%;
@@ -33,7 +27,15 @@
 .hint {
   text-align: center;
   color: #FFFFFF;
-  font-family: Material-Design-Icons;
-  font-style: italic;
+  line-height: 26px;
+  padding: 10px 20px;
+}
 
+.hintContainer {
+  background-color:gainsboro;
+  width: 40%;
+  margin: auto;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-top: 2%;
+  overflow: auto;
 }
