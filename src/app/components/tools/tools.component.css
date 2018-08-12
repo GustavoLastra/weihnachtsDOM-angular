@@ -1,11 +1,11 @@
-:host(app-tools) { width:95% }
+:host(app-tools) { width:100% }
 
 .toolsRow {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 95%;
   margin: auto;
 }
 
