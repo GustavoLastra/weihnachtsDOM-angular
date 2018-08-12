@@ -8,10 +8,17 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class ToolsComponent {
 
   @Output() onCreate = new EventEmitter();
+  buttonLabel:string= "Create Tree";
   constructor() { }
 
-  onClickCreate() {
-    this.onCreate.emit()
+  onClick() {
+    if(this.buttonLabel == "Create Tree") {
+      this.buttonLabel = "Destroy Tree";
+      this.onCreate.emit("create")
+    } else {
+      this.buttonLabel = "Create Tree";
+      this.onCreate.emit("destroy")
+    }
   }
 
 }

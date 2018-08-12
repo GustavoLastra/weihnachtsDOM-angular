@@ -1,6 +1,6 @@
 <div class="rootContainer">
   <div class="toolsContainer">
-    <app-tools (onCreate)="onCreate()"></app-tools>
+    <app-tools (onCreate)="onCreate($event)"></app-tools>
   </div>
 
     <div *ngIf="showTree">

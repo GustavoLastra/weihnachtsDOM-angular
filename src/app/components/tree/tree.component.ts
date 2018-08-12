@@ -7,7 +7,7 @@ import {Led} from "../../shared/model/led";
   templateUrl: './tree.component.html',
   styleUrls: ['./tree.component.css']
 })
-export class TreeComponent implements OnInit {
+export class TreeComponent {
   actualTree: Led[];
   showTree: boolean = false;
 
@@ -17,11 +17,11 @@ export class TreeComponent implements OnInit {
     })
   }
 
-  ngOnInit() {
+  onCreate(todo:string) {
+    if (todo=="create") {
+      this.showTree = true;
+    } else {
+      this.showTree = false;
+    }
   }
-
-  onCreate() {
-    this.showTree = true;
-  }
-
 }
