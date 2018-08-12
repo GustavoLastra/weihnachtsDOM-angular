@@ -12,12 +12,10 @@ export class TreeService {
   constructor() {}
 
   initialTree() {
-    console.log("resetTree");
     this.turn("1", false);
   }
 
   turn(id: string, newButtonState: boolean) {
-    console.log("id: " + id);
     let temp:Led[]= this.actualTree$.getValue();
     let found: boolean = false;
     this.scan(temp, id, newButtonState, found)
