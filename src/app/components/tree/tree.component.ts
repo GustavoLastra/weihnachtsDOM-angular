@@ -8,7 +8,7 @@ import {Led} from "../../shared/model/led";
   styleUrls: ['./tree.component.css']
 })
 export class TreeComponent {
-  actualTree: Led[];
+  actualTree: Led[]=[];
   showTree: boolean = false;
 
   constructor(private treeService:TreeService) {

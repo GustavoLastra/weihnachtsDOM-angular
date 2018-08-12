@@ -9,9 +9,11 @@ import {Led} from '../model/led'
 export class TreeService {
 
   actualTree$= new BehaviorSubject<Led[]>(InitialLedList);
+  constructor() {}
 
-
-  constructor() {
+  initialTree() {
+    console.log("resetTree");
+    this.turn("1", false);
   }
 
   turn(id: string, newButtonState: boolean) {
