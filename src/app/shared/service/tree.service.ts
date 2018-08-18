@@ -24,12 +24,12 @@ export class TreeService {
 
   scan(obj:Led[], id: string, newButtonState: boolean, found: boolean){
     if (found===true) {
-      obj.map(led =>{
+      obj.forEach(led =>{
         led.buttonState = newButtonState;
         this.scan(led.ledList, id, newButtonState, found);
       })
     } else {
-      obj.map(led =>{
+      obj.forEach(led =>{
         if (led.id === id) {
           found = true;
           led.buttonState = newButtonState;

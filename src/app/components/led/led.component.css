@@ -1,3 +1,4 @@
+
 .backgroundOff {
   color: #212121;
   background-color: #BDBDBD;
@@ -26,6 +27,3 @@
   transform: translateY(2px);
 }
 
-.ledDiv {
-  margin: auto;
-}
